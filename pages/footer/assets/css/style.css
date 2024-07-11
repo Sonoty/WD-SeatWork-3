@@ -1,91 +1,400 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: white;
+/* Common Footer Styles */
+.footer, .footer2, .footer3, .footer4, .footer5,
+.animated-footer1, .animated-footer2, .animated-footer3, .animated-footer4, .animated-footer5 {
+    padding: 20px;
+    color: #fff;
+    background-color: #333;
+    margin-bottom: 20px;
 }
-footer{
-    background: #343434;
-    padding-top: 50px;
+
+.footer h3, .footer2 h3, .footer3 h3, .footer4 h3, .footer5 h3,
+.animated-footer1 h3, .animated-footer2 h3, .animated-footer3 h3, .animated-footer4 h3, .animated-footer5 h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
-.container{
-    width: 1140px;
-    margin: auto;
+
+/* Static Footer Design 1 */
+.footer .footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
-.footer-content{
-    width: 33.3%;
+
+.footer .footer-section {
+    flex: 1;
+    padding: 10px;
 }
-h3{
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-align: center;
+
+.footer .footer-section h3 {
+    margin-bottom: 10px;
 }
-.footer-content p{
-    width:190px;
-    margin: auto;
-    padding: 7px;
-}
-.footer-content ul{
-    text-align: center;
-}
-.list{
+
+.footer .footer-section ul {
+    list-style: none;
     padding: 0;
 }
-.list li{
-    width: auto;
-    text-align: center;
-    list-style-type:none;
-    padding: 7px;
-    position: relative;
+
+.footer .footer-section ul li {
+    margin-bottom: 5px;
 }
-.list li::before{
-    content: '';
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background: #f18930;
-    transition-duration: .5s;
-}
-.list li:hover::before{
-    width: 70px;
-}
-.social-icons{
-    text-align: center;
-    padding: 0;
-}
-.social-icons li{
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-}
-.social-icons i{
-    color: white;
-    font-size: 25px;
-}
-a{
+
+.footer .footer-section ul li a {
+    color: #fff;
     text-decoration: none;
 }
-a:hover{
-    color: #f18930;
+
+.footer .footer-section ul li a:hover {
+    text-decoration: underline;
 }
-.social-icons i:hover{
-    color: #f18930;
+
+.footer .subscribe-form input {
+    padding: 5px;
+    margin-right: 5px;
 }
-.bottom-bar{
-    background: #f18930;
+
+.footer .footer-bottom {
     text-align: center;
-    padding: 10px 0;
-    margin-top: 50px;
+    margin-top: 10px;
 }
-.bottom-bar p{
-    color: #343434;
-    margin: 0;
-    font-size: 16px;
-    padding: 7px;
+
+/* Static Footer Design 2 */
+.footer2 .footer-container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer2 .footer-left2 {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer2 .footer-right2 {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer2 .social-icons2 a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.footer2 .contact-info2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer2 .contact-item2 {
+    margin-bottom: 5px;
+}
+
+/* Static Footer Design 3 */
+.footer3 .social-container3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer3 .social-icon3 {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.footer3 .footer-menu3 {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer3 .footer-menu3 li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer3 .footer-menu3 li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Static Footer Design 4 */
+.footer4 .footer-container4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer4 .footer-column4 {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer4 .footer-column4 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer4 .footer-column4 ul li {
+    margin-bottom: 5px;
+}
+
+.footer4 .footer-column4 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer4 .footer-bottom4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer4 .footer-links4 {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer4 .footer-links4 li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer4 .footer-links4 li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Static Footer Design 5 */
+.footer5 .footer-container5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer5 .footer-column5 {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer5 .footer-column5 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer5 .footer-column5 ul li {
+    margin-bottom: 5px;
+}
+
+.footer5 .footer-column5 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer5 .footer-bottom5 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Animated Footer Design 1 */
+.animated-footer1 .animated-footer-container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animated-footer1 .animated-footer-section1 {
+    flex: 1;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated-footer1 .animated-footer-section1:hover {
+    transform: translateY(-10px);
+    background-color: #555;
+}
+
+.animated-footer1 .animated-footer-section1 h3 {
+    margin-bottom: 10px;
+}
+
+.animated-footer1 .animated-footer-section1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.animated-footer1 .animated-footer-section1 ul li {
+    margin-bottom: 5px;
+}
+
+.animated-footer1 .animated-footer-section1 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.animated-footer1 .animated-footer-section1 ul li a:hover {
+    text-decoration: underline;
+}
+
+.animated-footer1 .animated-subscribe-form1 input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.animated-footer1 .animated-footer-bottom1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Animated Footer Design 2 */
+.animated-footer2 .animated-footer-container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animated-footer2 .animated-footer-left2 {
+    flex: 1;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated-footer2 .animated-footer-left2:hover {
+    transform: scale(1.05);
+    background-color: #555;
+}
+
+.animated-footer2 .animated-footer-right2 {
+    flex: 1;
+    padding: 10px;
+}
+
+.animated-footer2 .animated-social-icons2 a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.animated-footer2 .animated-contact-info2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.animated-footer2 .animated-contact-item2 {
+    margin-bottom: 5px;
+}
+
+/* Animated Footer Design 3 */
+.animated-footer3 .animated-social-container3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.animated-footer3 .animated-social-icon3 {
+    margin-right: 10px;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.animated-footer3 .animated-social-icon3:hover {
+    color: #ff6600;
+}
+
+.animated-footer3 .animated-footer-menu3 {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.animated-footer3 .animated-footer-menu3 li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.animated-footer3 .animated-footer-menu3 li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.animated-footer3 .animated-footer-menu3 li a:hover {
+    color: #ff6600;
+}
+
+/* Animated Footer Design 4 */
+.animated-footer4 .animated-footer-container4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animated-footer4 .animated-footer-column4 {
+    flex: 1;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated-footer4 .animated-footer-column4:hover {
+    transform: rotate(-2deg);
+    background-color: #555;
+}
+
+.animated-footer4 .animated-footer-column4 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.animated-footer4 .animated-footer-column4 ul li {
+    margin-bottom: 5px;
+}
+
+.animated-footer4 .animated-footer-column4 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.animated-footer4 .animated-footer-bottom4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.animated-footer4 .animated-footer-links4 {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.animated-footer4 .animated-footer-links4 li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.animated-footer4 .animated-footer-links4 li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Animated Footer Design 5 */
+.animated-footer5 .animated-footer-container5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animated-footer5 .animated-footer-column5 {
+    flex: 1;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated-footer5 .animated-footer-column5:hover {
+    transform: skewX(-5deg);
+    background-color: #555;
+}
+
+.animated-footer5 .animated-footer-column5 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.animated-footer5 .animated-footer-column5 ul li {
+    margin-bottom: 5px;
+}
+
+.animated-footer5 .animated-footer-column5 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.animated-footer5 .animated-footer-bottom5 {
+    text-align: center;
+    margin-top: 10px;
 }

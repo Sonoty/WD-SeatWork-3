@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Landing Page website</title>
+        <title>Header</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <section>
-            <div class="container">
-                <nav>
-                    <h1>AKATSUKI</h1>
-                    <ul>
-                        <li><a href="/index.html"class="active">HOME</a></li>
-                        <li><a href="../WD-SeatWork-3/pages/header/index.html" class="active">HEADER</a></li>
-                        <li><a href="../WD-SeatWork-3/pages/footer/index.html" class="active">FOOTER</a></li>
-                    </ul>
-                </nav>
-                <div class="article">
-                    <h1>SeatWork #3</h1>
-                    <p>The objective of this project is to create a website that is both aesthetically pleasing and practical, with unique header and footer designs. The website features five static and five animated header and footer options, all created with pure HTML and CSS. The landing page offers a clear and concise summary of the project's goals along with easy navigation for viewing the various designs. For neat and structured code, proper file organization and external CSS are maintained.</p>
-                    
+
+        <header class="header">
+            <a href="#home" class="logo">AKATSUKI<i class='bx bxl-redux bx-spin' ></i></a>
+
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>SeatWork 3</h1>
+                <h3 class="text-animation"><span></span></h3>
+                <p>The objective of this project is to create a website that is both aesthetically pleasing and practical, with unique header and footer designs. The website features five static and five animated header and footer options, all created with pure HTML and CSS. The landing page offers a clear and concise summary of the project's goals along with easy navigation for viewing the various designs. For neat and structured code, proper file organization and external CSS are maintained.</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class='bx bx-cross bx-spin bx-rotate-90' ></i></a>
+                    <a href="#"><i class='bx bxs-leaf' ></i></a>
+                    <a href="#"><i class='bx bx-analyse bx-spin bx-rotate-90' ></i></a>
+                    <a href="#"><i class='bx bxs-no-entry'></i></a>
                 </div>
+
+                <div class="btn-group">
+                    <a href="./pages/header/index.html" class="btn">Header</a>
+                    <a href="./pages/footer/index.html" class="btn">Footer</a>
+                </div>
+
+            </div>
+            <div class="home-img">
+                <img src="./assets/img/akatsuki.png" alt="akaktsuki">
             </div>
         </section>
     </body>

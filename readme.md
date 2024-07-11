@@ -59,7 +59,7 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
-Guiding Question:
+
 - Project: Wireframe, Resume Website, Emmit Code, Html and Css
 - Properly know how to use Github and become more professional in creating a project
 - Trial and Error, Knowledge, Learnings, Self-Developing
@@ -68,7 +68,6 @@ Guiding Question:
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- Single Page Website
 - Multiple Link Website
 
 ### Technology
